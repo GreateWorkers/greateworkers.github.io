@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: GreateWorkers Blog
-description: GreateWorkers 개이 블로그
+description: GreateWorkers Blog
 #baseurl: "https://blog.greateworkers.kr" # the subpath of your site, e.g. /blog
 #url: "https://greateworkers.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
