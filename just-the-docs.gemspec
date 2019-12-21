@@ -1,7 +1,7 @@
 # coding: utf-8
 
 Gem::Specification.new do |spec|
-  spec.name          = "just-the-docs"
+  spec.name          = "GreateWorkers"
   spec.version       = "0.2.7"
   spec.authors       = ["GreateSorkers"]
   spec.email         = ["greateworkers@gmail.com"]

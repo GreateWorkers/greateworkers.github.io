@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    just-the-docs (0.2.7)
+    GreateWorkers (0.2.7)
       jekyll (~> 3.8.5)
       jekyll-seo-tag (~> 2.0)
       rake (~> 12.3.1)
@@ -66,7 +66,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  just-the-docs!
+  GreateWorkers!
 
 BUNDLED WITH
    1.17.3
