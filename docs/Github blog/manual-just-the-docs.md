@@ -1,8 +1,8 @@
 ---
 layout: default
-title: 설치 로컬
-parent: Jekyll
-nav_order: 2
+title: theme just-the-docs
+parent: Github blog
+nav_order: 4
 ---
 
 # Typography
