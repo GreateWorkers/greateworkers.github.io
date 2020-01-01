@@ -28,10 +28,10 @@ Github 페이지에서 글자 바꿔가며 테스트하고 감 잡을 수 있어
 간단한 블로그 소스를 찾습니다
 https://jekyllthemes.io/free
 
-![image](/assets/images/스크린샷 2020-01-01 오전 11.02.06.png)
+![image](/assets/images/11.02.06.png)
 
 github 저장소로 들어갑니다.
-![image](/assets/images/스크린샷 2020-01-01 오전 11.05.28.png)
+![image](/assets/images/11.05.28.png)
 
 ---
 
@@ -40,7 +40,7 @@ github 저장소로 들어갑니다.
 소스를 Folk 하여 저장소 설정을 합니다.
 
 setting 버튼을 클릭하여 들어갑니다.
-![image](/assets/images/스크린샷 2020-01-01 오전 11.08.29.png)
+![image](/assets/images/11.08.29.png)
 
 저장소 이름을 지정합니다. 
 Repository name
@@ -49,7 +49,7 @@ Repository name
 
 저런식으로 주소를 입력하고 들어올 수 있는 것은 하나만 지정할 수 있습니다.
 저는 greateworkers.github.io 로 지정했습니다.
-![image](/assets/images/스크린샷 2020-01-01 오전 11.11.10.png)
+![image](/assets/images/11.11.10.png)
 
 ---
 
@@ -65,7 +65,7 @@ Repository name
 
 보유한 도메인에 설정하고 싶은 경우 설정합니다.
 화면을 좀 더 내리면 아래 설정이 나옵니다.
-![image](/assets/images/스크린샷 2020-01-01 오전 11.14.49.png)
+![image](/assets/images/11.14.49.png)
 
 custom domain 에 보유 도메인을 입력합니다.
 본인 사이트는 https를 강제 리다이렉션이 되어있습니다. 그래서 아래 https 리다이렉션도 체크했습니다.
