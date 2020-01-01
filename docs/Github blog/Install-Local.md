@@ -119,3 +119,7 @@ browser 열고 127.0.0.1:4000 (default) 입력합니다.
 
 ---
 
+## 오류
+fsevent: running worker failed: incompatible character encodings: ASCII-8BIT and UTF-8
+
+대분류에 한글 쓰니 나타나는 오류
