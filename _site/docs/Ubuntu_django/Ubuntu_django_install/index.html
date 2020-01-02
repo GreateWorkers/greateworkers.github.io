@@ -15,7 +15,7 @@ python manage.py migrate
 python manage.py runserver
 python manage.py runserver 127.0.0.1:8000
 python manage.py runserver 127.0.0.1:8000 --settings=[사용할 셋팅 파일지정]
-</code></pre></div></div><hr /><h2 id="uwsgi-설정-파일"> <a href="#uwsgi-설정-파일" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#link"></use></svg></a> uwsgi 설정 파일</h2><div class="code-example"><ul><li>빠른 웹서비스와 보안을 위해 uwsgi 와 nginx 를 셋팅<li>uwsgi ini 파일 생성하여 실행한다<li>uid / gid 의 deploy 는 www-data 로 변경 가능<br /> nginx 의 기본 유저는 www-data 임</ul></div><hr /><div class="code-example"><ul><li>ubuntu 에서 실제 서비스할 설정 파일</ul></div><div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[uwsgi]
+</code></pre></div></div><hr /><h2 id="uwsgi-설정-파일"> <a href="#uwsgi-설정-파일" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#link"></use></svg></a> uwsgi 설정 파일</h2><div class="code-example"><ul><li>빠른 웹서비스와 보안을 위해 uwsgi 와 nginx 를 셋팅<li>uwsgi ini 파일 생성하여 실행한다<li>uid / gid 의 deploy 는 www-data 로 변경 가능<br /> nginx 의 기본 유저는 www-data 임</ul></div><hr /><div class="code-example"><ul><li>ubuntu 에서 실제 서비스할 설정 파일 deploy.ini</ul></div><div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[uwsgi]
 sitename        = mysite 
 chmod-socket    = 660 
 uid             = deploy 
@@ -32,7 +32,7 @@ enable-threads  = true
 vacuum          = true
 log-reopen      = true
 
-</code></pre></div></div><div class="code-example"><ul><li>맥에서 디버그용</ul></div><div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[uwsgi]
+</code></pre></div></div><div class="code-example"><ul><li>맥에서 디버그용 debug.ini</ul></div><div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[uwsgi]
 home            = mypath/myvenv
 chdir           = mypath/webserver
 socket          = mypath/webserver/uwsgi/tmp/lightsail.sock

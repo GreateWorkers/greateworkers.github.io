@@ -155,7 +155,7 @@ nginx 의 기본 유저는 www-data 임
 
 <div class="code-example" markdown="1">
 
-- ubuntu 에서 실제 서비스할 설정 파일
+- ubuntu 에서 실제 서비스할 설정 파일 deploy.ini
 
 </div>
 
@@ -180,7 +180,7 @@ log-reopen      = true
 ```
 <div class="code-example" markdown="1">
 
-- 맥에서 디버그용
+- 맥에서 디버그용 debug.ini
 
 </div>
 
