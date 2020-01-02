@@ -27,6 +27,7 @@ ubuntu 를 터미널로 접속하여 사용하면 cpu 가 저사양이라 다소
 ---
 
 ## 설치 환경
+
 2.4 intel core 2 duo<br>
 macbook pro 13inch 2010 <br>
 osx 10.14 mojave <br>
@@ -43,62 +44,92 @@ https://www.virtualbox.org
 http://releases.ubuntu.com
 
 
-ubuntu lts 18 선택
+- ubuntu lts 18 선택
 
 
 ---
 
 
 ## Virtualbox 네트워크 설정
-설치 이미지 설정 > 네트워크 탭 > 어댑터에 브리지 선택 > 재부팅
-VM 에서 다운 받은 ubuntu OS 세션을 생성하고 이미지를 선택하여 설치를 진행한다.
+
+- 설치 이미지 설정 > 네트워크 탭 > 어댑터에 브리지 선택 > 재부팅  
+- VM 에서 다운 받은 ubuntu OS 세션을 생성하고 이미지를 선택하여 설치를 진행한다.  
 
 ---
 
 ## ubuntu 설치
 
-우분투 설치시 몇 번 실패하였다.
-기본 옵션만 선택하니 잘 되지 않아 
+우분투 설치시 몇 번 실패하였다.  
+아래 옵션은 변경하여 설치
 
-중간에 kr.archive.ubuntu.com/ubuntu > us.archive.ubuntu.com/ubuntu 을 변경
 
-파티션 선택 항목에서 
-기본 entire disk 을 entire disk and LVM 이라는 항목으로 변경
+<!-- Text can be **bold**, _italic_, or ~~strikethrough~~. -->
+<!-- [Link to another page](another-page). -->
+<div class="code-example" markdown="1">
+kr 을 us.archive.ubuntu.com/ubuntu 을 변경  
+</div>
 
-curtin > LVM 으로 설치
-마지막에 업데이트 하는데 그냥 끄고 재부팅
+```
+kr.archive.ubuntu.com/ubuntu 
+us.archive.ubuntu.com/ubuntu
+```
+
+<div class="code-example" markdown="1">
+
+- 파티션 선택 항목에서 기본 entire disk 을 entire disk and LVM 이라는 항목으로 변경  
+
+- curtin > LVM 으로 설치  
+마지막에 업데이트 하는데 그냥 끄고 재부팅  
+</div>
 
 ---
 
 ## Virtual Machine 에 설치된 ubuntu terminal 접속 
  
 
-- 설치 후 조금 기다렸다가
+- 설치 후 조금 기다렸다가  
  
 
-- ifconfig 실행
-   상세내용이 출력 됨 > inet addr 에 ip 확인 ( 공유기에서 할당받은 ip가 뜸 )
+- ifconfig 실행  
+   상세내용이 출력 됨 > inet addr 에 ip 확인 ( 공유기에서 할당받은 ip가 뜸 )  
  
 
-- terminal 로 접속
-ssh ubuntu@192.168.x.x
+- terminal 로 접속  
+ssh ubuntu@192.168.x.x  
  
 
-- yes/no 질문에 yes
+- yes/no 질문에 yes  
 
 ---
 
 
 ## ubuntu kakao 로 다운로드 링크 변경
 
-sudo vi /etc/apt/sources.list
-파일 내에 있는 모든 저장소 주소를 mirror.kakao.com으로 변경해주면 된다.
+<div class="code-example" markdown="1">
+파일 내에 있는 모든 저장소 주소를 mirror.kakao.com으로 변경해주면 된다.  
+</div>  
 
-%s/(변경할 대상)/(변경할 값) 명령어를 사용.
-:%s/kr.archive.ubuntu.com/mirror.kakao.com
+```
+sudo vi /etc/apt/sources.list  
+```
 
-패키지 업데이트
+
+<div class="code-example" markdown="1">
+%s/(변경할 대상)/(변경할 값) 명령어를 사용.  
+키보드 : 누르고 아래와 같이
+</div>
+
+```
+:%s/kr.archive.ubuntu.com/mirror.kakao.com  
+```
+
+<div class="code-example" markdown="1">
+패키지 업데이트  
+</div>
+
+```
 sudo apt-get update 
+```
  
 
 ---
