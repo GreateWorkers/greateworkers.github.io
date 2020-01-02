@@ -200,7 +200,7 @@ chmod-socket=666
 
 - 로컬 저장 위치는 mypath/webserver/uwsgi 에 저장
 
-- 실제 서비스할 곳은 uwsgi empirer 를 위해 한 곳에 모아둔다
+- 실제 서비스할 곳은 uwsgi emperor 를 위해 한 곳에 모아둔다
 
 </div>
 
