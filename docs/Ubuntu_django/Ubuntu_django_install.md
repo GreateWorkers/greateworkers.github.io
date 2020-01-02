@@ -137,8 +137,15 @@ python manage.py runserver
 python manage.py runserver 127.0.0.1:8000
 python manage.py runserver 127.0.0.1:8000 --settings=[사용할 셋팅 파일지정]
 ```
+
+![image](/assets/images/n/4.jpeg)  
+
+![image](/assets/images/n/7.jpeg)  
+
+![image](/assets/images/n/8.jpeg)  
+
 ---
- 
+
 ## uwsgi 설정 파일
 
 
@@ -188,12 +195,10 @@ log-reopen      = true
 [uwsgi]
 home            = mypath/myvenv
 chdir           = mypath/webserver
-socket          = mypath/webserver/uwsgi/tmp/lightsail.sock
-pidfile         = mypath/webserver/uwsgi/tmp/lightsail.pid
+socket          = mypath/webserver/uwsgi/tmp/mysock.sock
+pidfile         = mypath/webserver/uwsgi/tmp/mypid.pid
 module          = server.wsgi.debug
 chmod-socket=666
-
-
 ```
 
 <div class="code-example" markdown="1">
@@ -204,7 +209,52 @@ chmod-socket=666
 
 </div>
 
+![image](/assets/images/n/1.jpeg)  
+
+---
 
 ## nginx 설정 파일
 
-## 오류 메세지
+```
+upstream my_sock {
+    server unix:///[mypath]/mysock.sock;
+}
+
+server {
+    //192.168.x.x:8000 or 192.168.x.x 가능
+    server_name [mysite.com]; 
+    charset utf-8;
+
+    location /media  {
+        alias /[mypath]/media;
+    }
+    location /static  {
+        alias /[mypath]/static;
+    }    
+    location / {
+        uwsgi_pass my_sock;
+        include /etc/nginx/uwsgi_params;        
+    }
+}
+
+```
+
+## 권한 설정
+
+<div class="code-example" markdown="1">
+
+폴더 권한 변경
+
+- tmp 폴더의 권한을 deploy,www-data 등의 서비스용 계정으로 변경해준다
+- 파일 생성이 필요하다면 media 도 
+- 루트에 있는 run, tmp 등의 폴더 사용은 권장하지 않는 것 같다
+</div>
+
+```
+sudo chown -R [서비스용 계정]:[서비스용 계정 그룹] tmp
+sudo chown -R [서비스용 계정]:[서비스용 계정 그룹] media
+
+예) sudo chown -R deploy:deploy tmp
+```
+
+---

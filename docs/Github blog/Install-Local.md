@@ -46,6 +46,7 @@ rvm 설치합니다. <small>rvm 관련 링크 <a href="https://rvm.io">rvm</a></
 루비 설치합니다. <small>루비 버전 확인 <a href="https://www.ruby-lang.org/ko/downloads/">ruby</a>
 </small>
 </div>
+
 ```
 \curl -sSL https://get.rvm.io | bash -s stable<br>
 rvm --default use 2.5.0
@@ -62,6 +63,7 @@ sudo gem install jekyll bundler
 적당한 폴더 위치로 이동합니다.<br>
 폴더를 생성학고 아래 명령어를 실행합니다.
 </div>
+
 ```
 jekyll new greateworkers.github.io
 cd greateworkers.github.io
@@ -97,6 +99,7 @@ jekyll serve --port 4001
 <div class="code-example" markdown="1">
 jekyll serve 실행 결과 입니다.
 </div>
+
 ```
 Configuration file: /mypath/greateworkers.github.io/_config.yml
             Source: /mypath/greateworkers.github.io

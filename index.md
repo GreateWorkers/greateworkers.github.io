@@ -7,9 +7,10 @@ permalink: /
 ---
 
 # 안녕하세요
-{: .fs-9 }
 
-Github에 생성한 블로그입니다.
+
+{% include nav.html %}
+
 {: .fs-6 .fw-300 }
 
 Family sites

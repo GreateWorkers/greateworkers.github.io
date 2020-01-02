@@ -5,7 +5,7 @@ parent: Github blog
 nav_order: 4
 ---
 
-# 현재 사용 중인 테마
+# theme just-the-docs
 {: .no_toc }
 
 ## Table of contents
@@ -13,6 +13,16 @@ nav_order: 4
 
 1. TOC
 {:toc}
+
+---
+
+## just-the-docs 폴더
+
+![image](/assets/images/screenshot.jpg)
+
+- nav.html  
+좌측 네비게이션
+
 
 ---
 
