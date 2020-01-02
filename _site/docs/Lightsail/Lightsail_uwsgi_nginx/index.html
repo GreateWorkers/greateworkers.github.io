@@ -22,9 +22,9 @@ socket          = mypath/myproject/uwsgi/tmp/mysock.sock
 pidfile         = mypath/myproject/uwsgi/tmp/mypid.pid
 module          = server.wsgi.debug
 chmod-socket=666
-
-
-</code></pre></div></div><div class="code-example"><ul><li><p>로컬 저장 위치는 mypath/myproject/uwsgi 에 저장하면 편함</p><li><p>서비스용 uwsgi.ini 파일은 혹은 파일들은 한 곳에 모아둔다<br /> 홈 디렉토리에 uwsgi/sites 같은 포러가 있으면 접근이 쉽고<br /> uwsgi emperor 를 위해 한 곳에 모아둔다</p></ul></div><hr /><h2 id="권한-설정"> <a href="#권한-설정" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#link"></use></svg></a> 권한 설정</h2><div class="code-example"><p>폴더 권한 변경</p><ul><li>tmp 폴더의 권한을 deploy,www-data 등의 서비스용 계정으로 변경해준다<li>파일 생성이 필요하다면 media 도<li>루트에 있는 run, tmp 등의 폴더 사용은 권장하지 않는 것 같다</ul></div><div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo chown -R [서비스용 계정]:[서비스용 계정 그룹] tmp
+</code></pre></div></div><div class="code-example"><ul><li><p>로컬 저장 위치는 mypath/myproject/uwsgi 에 저장하면 편함</p><li><p>서비스용 uwsgi.ini 파일은 혹은 파일들은 한 곳에 모아둔다<br /> 홈 디렉토리에 uwsgi/sites 같은 포러가 있으면 접근이 쉽고<br /> uwsgi emperor 를 위해 한 곳에 모아둔다</p></ul></div><div class="code-example"><p>가상환경에서 uwsgi 를 실행하여 확인할 수 있다</p><p>웹페이지에서 바로 확인할려면 ini 파일에 http = :8000 추가한다 localhost:8000 으로 웹페이지로 들어간다</p></div><div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>uwsgi -i debug.ini
+uwsgi -i deploy.ini 
+</code></pre></div></div><p><img src="/assets/images/n/1.jpeg" alt="image" /></p><hr /><h2 id="권한-설정"> <a href="#권한-설정" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#link"></use></svg></a> 권한 설정</h2><div class="code-example"><p>폴더 권한 변경</p><ul><li>tmp 폴더의 권한을 deploy,www-data 등의 서비스용 계정으로 변경해준다<li>파일 생성이 필요하다면 media 도<li>루트에 있는 run, tmp 등의 폴더 사용은 권장하지 않는 것 같다</ul></div><div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo chown -R [서비스용 계정]:[서비스용 계정 그룹] tmp
 sudo chown -R [서비스용 계정]:[서비스용 계정 그룹] media
 
 예) sudo chown -R deploy:deploy tmp

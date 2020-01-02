@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Lightsail serviceeb
+title: Lightsail service
 nav_order: 1
 parent: Lightsail 웹서비스 시작하기
 ---
