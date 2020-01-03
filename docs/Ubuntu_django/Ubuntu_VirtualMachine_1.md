@@ -3,6 +3,7 @@ layout: default
 title: virtual machine 에 ubuntu 설치
 nav_order: 1
 parent: Ubuntu django 설치
+previous: ../Ubuntu_django
 next: Ubuntu_django_install_2
 ---
 

@@ -3,6 +3,7 @@ layout: default
 title: Lightsail service
 nav_order: 1
 parent: Lightsail 웹서비스 시작하기
+previous: ../Lightsail
 next: Lightsail_source_2
 ---
 {% include nav_btn.html %}

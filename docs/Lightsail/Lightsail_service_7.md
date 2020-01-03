@@ -4,6 +4,7 @@ title: lightsail service
 nav_order: 7
 parent: Lightsail 웹서비스 시작하기
 previous: Lightsail_error_6
+next: ../Lightsail
 ---
 
 {% include nav_btn.html %}

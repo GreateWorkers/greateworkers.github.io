@@ -4,6 +4,7 @@ title: error 메세지
 nav_order: 3
 parent: Ubuntu django 설치
 previous: Ubuntu_django_install_2
+next: ../Ubuntu_django
 ---
 
 {% include nav_btn.html %}

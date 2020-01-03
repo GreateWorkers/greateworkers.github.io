@@ -1,13 +1,6 @@
 [
   
   {
-    "title": "django date 문자열",
-    "content": "이전 단계 다음 단계 . django template tag . . orm string | . orm string . 장고 . 이전 단계 다음 단계 .",
-    "url": "http://localhost:4000/docs/django/2020-1-1-django_date_3/",
-    "relUrl": "/docs/django/2020-1-1-django_date_3/"
-  } ,
-  
-  {
     "title": "Page not found",
     "content": "Page not found . The page you requested could not be found. Try using the navigation or search to find what you&#39;re looking for or go to this site&#39;s home page. .",
     "url": "http://localhost:4000/404",
@@ -131,6 +124,13 @@
     "content": "django . 장고의 기능 및 문법 등 테스트 .",
     "url": "http://localhost:4000/docs/django",
     "relUrl": "/docs/django"
+  } ,
+  
+  {
+    "title": "django date 문자열",
+    "content": "이전 단계 다음 단계 . django template tag . . orm string | . orm string . 장고 . 이전 단계 다음 단계 .",
+    "url": "http://localhost:4000/docs/django/django_date_3/",
+    "relUrl": "/docs/django/django_date_3/"
   } ,
   
   {

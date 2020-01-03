@@ -4,7 +4,7 @@ title: django date 문자열
 nav_order: 3
 parent: django
 previous: django_templatetag_2
-next: 
+next: ../django
 ---
 {% include nav_btn.html %}
 
