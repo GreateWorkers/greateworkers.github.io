@@ -3,7 +3,11 @@ layout: default
 title: ssl
 nav_order: 5
 parent: Lightsail 웹서비스 시작하기
+previous: Lightsail_uwsgi_nginx_4
+next: Lightsail_error_6
 ---
+
+{% include nav_btn.html %}
 
 # Lightsail 에 웹서비스
 {: .no_toc }
@@ -15,8 +19,7 @@ parent: Lightsail 웹서비스 시작하기
 {:toc}
 
 ---
-[이전 단계](../Lightsail_uwsgi_nginx_4) |
-[다음 단계](../Lightsail_error_6)
+
 
 ## ssl certbot
 
@@ -46,5 +49,4 @@ https://www.ssllabs.com/ssltest/analyze.html?d=www.greateworkers.kr
 ```
 
 
-[이전 단계](../Lightsail_uwsgi_nginx_4) |
-[다음 단계](../Lightsail_error_6)
+{% include nav_btn.html %}

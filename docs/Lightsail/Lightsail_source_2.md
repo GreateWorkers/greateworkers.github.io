@@ -3,7 +3,11 @@ layout: default
 title: Clone source
 nav_order: 2
 parent: Lightsail 웹서비스 시작하기
+previous: Lightsail_install_1
+next: Lightsail_postgres_3
 ---
+
+{% include nav_btn.html %}
 
 # Lightsail 에 웹서비스
 {: .no_toc }
@@ -15,8 +19,8 @@ parent: Lightsail 웹서비스 시작하기
 {:toc}
 
 ---
-[이전 단계](../Lightsail_install_1) |
-[다음 단계](../Lightsail_postgres_3)
+
+
 
 ## Git 에서 Source 를 pull
 <div class="code-example" markdown="1">
@@ -58,5 +62,4 @@ pip install -r requirements.txt
 </div>
 
 
-[이전 단계](../Lightsail_install_1) |
-[다음 단계](../Lightsail_postgres_3)
+{% include nav_btn.html %}

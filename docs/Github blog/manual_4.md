@@ -3,7 +3,11 @@ layout: default
 title: 메뉴얼 Jekyll
 parent: Github blog
 nav_order: 4
+previous: Install-Local-addgit_3
+next: manual-just-the-docs_5
 ---
+
+{% include nav_btn.html %}
 
 # 메뉴얼 Jekyll
 {: .no_toc }
@@ -31,5 +35,3 @@ nav_order: 4
 페이지 변수
 Paginator
 
-[이전 단계](../Install-Local-addgit_3) |
-[다음 단계](../manual-just-the-docs_5)

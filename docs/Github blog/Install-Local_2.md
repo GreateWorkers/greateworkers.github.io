@@ -3,7 +3,11 @@ layout: default
 title: 설치 Jekyll
 parent: Github blog
 nav_order: 2
+previous: install-Folk_1
+next: install-Local-addgit_3
 ---
+
+{% include nav_btn.html %}
 
 # 설치 Jekyll
 {: .no_toc }
@@ -127,6 +131,4 @@ fsevent: running worker failed: incompatible character encodings: ASCII-8BIT and
 
 대분류에 한글 쓰니 나타나는 오류
 
-
-[이전 단계](../install-Folk_1) |
-[다음 단계](../install-Local-addgit_3)
+{% include nav_btn.html %}

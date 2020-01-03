@@ -3,7 +3,10 @@ layout: default
 title: theme just-the-docs
 parent: Github blog
 nav_order: 5
+previous: manual_4
 ---
+
+{% include nav_btn.html %}
 
 # theme just-the-docs
 {: .no_toc }
@@ -182,4 +185,4 @@ For example, if you'd like to add your own styles for printing a page, you could
 }
 ```
 
-[이전 단계](../manual_4)
+{% include nav_btn.html %}

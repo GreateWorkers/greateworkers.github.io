@@ -3,7 +3,10 @@ layout: default
 title: Github ssh key 등록 후 push
 parent: Github blog
 nav_order: 3
+previous: install-Local_2
+next: manual_4
 ---
+{% include nav_btn.html %}
 
 # Github push ssh key 등록하기
 {: .no_toc }
@@ -62,6 +65,4 @@ clone 할 때 덮어쓰기가 된 것 같기도 한대<br>
 
 ![image](/assets/images/3_51_44.jpeg)
 
-
-[이전 단계](../install-Local_2) |
-[다음 단계](../manual_4)
+{% include nav_btn.html %}

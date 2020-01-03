@@ -3,7 +3,9 @@ layout: default
 title: 설치 Folk github
 parent: Github blog
 nav_order: 1
+next: install-Local_2
 ---
+{% include nav_btn.html %}
 
 # Folk 
 {: .no_toc }
@@ -87,4 +89,4 @@ User-agent: *
 Disallow: /
 ```
 
-[다음 단계](../install-Local_2)
+{% include nav_btn.html %}

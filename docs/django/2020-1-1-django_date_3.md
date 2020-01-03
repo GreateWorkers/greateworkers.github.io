@@ -1,13 +1,14 @@
 ---
 layout: default
-title: django orm
-nav_order: 1
+title: django date 문자열
+nav_order: 3
 parent: django
-next: django_templatetag_2
+previous: django_templatetag_2
+next: 
 ---
 {% include nav_btn.html %}
 
-# django orm
+# django template tag
 {: .no_toc }
 
 ## Table of contents
@@ -19,5 +20,7 @@ next: django_templatetag_2
 ---
 
 ## orm string
+
+장고
 
 {% include nav_btn.html %}

@@ -3,7 +3,10 @@ layout: default
 title: postgres 
 nav_order: 3
 parent: Lightsail 웹서비스 시작하기
+previous: Lightsail_source_2
+next: Lightsail_uwsgi_nginx_4
 ---
+{% include nav_btn.html %}
 
 # postgres 설치
 {: .no_toc }
@@ -16,8 +19,7 @@ parent: Lightsail 웹서비스 시작하기
 
 ---
 
-[이전 단계](../Lightsail_source_2) |
-[다음 단계](../Lightsail_uwsgi_nginx_4)
+
 
 ## 소개
 
@@ -156,5 +158,4 @@ ctrl+D
 ```
 
 
-[이전 단계](../Lightsail_source_2) |
-[다음 단계](../Lightsail_uwsgi_nginx_4)
+{% include nav_btn.html %}

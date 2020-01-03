@@ -3,7 +3,10 @@ layout: default
 title: lightsail service
 nav_order: 7
 parent: Lightsail 웹서비스 시작하기
+previous: Lightsail_error_6
 ---
+
+{% include nav_btn.html %}
 
 # lightsail service
 {: .no_toc }
@@ -15,7 +18,7 @@ parent: Lightsail 웹서비스 시작하기
 {:toc}
 
 ---
-[이전 단계](../Lightsail_error_6) 
+ 
 
 ## 고정 IP
 
@@ -24,4 +27,4 @@ parent: Lightsail 웹서비스 시작하기
 instance 와 연결되어 있으면 무료임  
 instance 삭제 후 따로 삭제해줘야 함 (해제 후에는 요금 부과)
 
-[이전 단계](../Lightsail_error_6) 
+{% include nav_btn.html %} 

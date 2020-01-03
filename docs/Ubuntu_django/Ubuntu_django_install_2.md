@@ -3,7 +3,12 @@ layout: default
 title: ubuntu 에 django 설치
 nav_order: 2
 parent: Ubuntu django 설치
+previous: Ubuntu_VirtualMachine_1
+next: Ubuntu_django_error_3
 ---
+
+{% include nav_btn.html %}
+
 
 # Virtual Machine 에 ubuntu 설치
 {: .no_toc }
@@ -260,5 +265,4 @@ sudo chown -R [서비스용 계정]:[서비스용 계정 그룹] media
 ---
 
 
-[이전 단계](../Ubuntu_VirtualMachine_1) |
-[다음 단계](../Ubuntu_django_error_3)
+{% include nav_btn.html %}

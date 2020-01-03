@@ -3,7 +3,7 @@ layout: default
 title: Ubuntu django 설치
 nav_order: 4
 has_children: true
-permalink: /docs/Ubuntu django 설치
+permalink: /docs/Ubuntu_django
 ---
 
 # Ubuntu & django 설치

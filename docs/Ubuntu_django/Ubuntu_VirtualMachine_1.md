@@ -3,7 +3,10 @@ layout: default
 title: virtual machine 에 ubuntu 설치
 nav_order: 1
 parent: Ubuntu django 설치
+next: Ubuntu_django_install_2
 ---
+
+{% include nav_btn.html %}
 
 # Virtual Machine 에 ubuntu 설치
 {: .no_toc }
@@ -134,5 +137,4 @@ sudo apt-get update
 
 ---
 
-
-[다음 단계](../Ubuntu_django_install_2)
+{% include nav_btn.html %}

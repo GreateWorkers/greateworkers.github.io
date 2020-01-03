@@ -3,7 +3,10 @@ layout: default
 title: django template tag
 nav_order: 2
 parent: django
+previous: django_orm_1
+next: django_date_3
 ---
+{% include nav_btn.html %}
 
 # django template tag
 {: .no_toc }
@@ -18,6 +21,4 @@ parent: django
 
 ## orm string
 
-
-[이전 단계](../django_orm_1) |
-[다음 단계](../django_templatetag_2)
+{% include nav_btn.html %}

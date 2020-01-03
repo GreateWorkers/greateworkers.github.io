@@ -3,8 +3,9 @@ layout: default
 title: Lightsail service
 nav_order: 1
 parent: Lightsail 웹서비스 시작하기
+next: Lightsail_source_2
 ---
-
+{% include nav_btn.html %}
 
 # Lightsail 웹서비스 시작하기
 {: .no_toc }
@@ -17,7 +18,7 @@ parent: Lightsail 웹서비스 시작하기
 
 
 ---
-[다음 단계](../Lightsail_source_2)
+
 
 ## 소개
 
@@ -127,4 +128,4 @@ virtualenv --python=python3.6 myvenv
 
 ERROR: Command errored out with exit status 1: /usr/bin/python3 -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-kfs97u50/uwsgi/setup.py'"'"'; **file**='"'"'/tmp/pip-install-kfs97u50/uwsgi/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(**file**);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, **file**, '"'"'exec'"'"'))' install --record /tmp/pip-record-bd067dgu/install-record.txt --single-version-externally-managed --compile Check the logs for full command output.
 
-[다음 단계](../Lightsail_source_2)
+{% include nav_btn.html %}

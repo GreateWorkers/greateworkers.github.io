@@ -3,7 +3,11 @@ layout: default
 title: nginx uwsgi
 nav_order: 4
 parent: Lightsail 웹서비스 시작하기
+previous: Lightsail_postgres_3
+next: Lightsail_ssl_5
 ---
+
+{% include nav_btn.html %}
 
 # nginx uwsgi
 {: .no_toc }
@@ -15,8 +19,7 @@ parent: Lightsail 웹서비스 시작하기
 {:toc}
 
 ---
-[이전 단계](../Lightsail_postgres_3) |
-[다음 단계](../Lightsail_ssl_5)
+
 
 ## uwsgi 설정 파일
 
@@ -250,5 +253,4 @@ nginx 에서 conf 에 문법 오류 체크 후 실행 될 것임
 log 확인
 
 
-[이전 단계](../Lightsail_postgres_3) |
-[다음 단계](../Lightsail_ssl_5)
+{% include nav_btn.html %}
