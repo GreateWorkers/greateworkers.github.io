@@ -6,7 +6,7 @@ parent: Ubuntu django 설치
 previous: ../Ubuntu_django
 next: Ubuntu_django_install_2
 ---
-
+ 
 {% include nav_btn.html %}
 
 # Virtual Machine 에 ubuntu 설치
@@ -22,7 +22,7 @@ next: Ubuntu_django_install_2
 
 ## 소개
 
-virtual machine 을 ubuntu 설치하고 nginx + uwsgi + django project 실행
+Virtual machine 을 ubuntu 설치하고 nginx + uwsgi + django project 실행
 
 cpu 가 저사양이라 다소 버벅임
 
