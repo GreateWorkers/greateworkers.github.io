@@ -123,7 +123,6 @@ Configuration file: /mypath/greateworkers.github.io/_config.yml
 browser 열고 127.0.0.1:4000 (default) 입력합니다.
 ![image](/assets/images/Pasted Graphic.jpeg)
 
-
 ---
 
 ## 오류
