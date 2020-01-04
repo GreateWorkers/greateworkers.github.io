@@ -3,7 +3,7 @@ layout: default
 title: Github blog
 nav_order: 3
 has_children: true
-permalink: /docs/Github blog
+permalink: /docs/Github_blog
 ---
 
 # Github 블로그

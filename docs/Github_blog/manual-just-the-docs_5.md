@@ -4,7 +4,7 @@ title: theme just-the-docs
 parent: Github blog
 nav_order: 5
 previous: manual_4
-next: ../Github blog
+next: ../Github_blog
 ---
 
 {% include nav_btn.html %}
