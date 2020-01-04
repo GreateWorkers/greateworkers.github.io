@@ -3,8 +3,8 @@ layout: default
 title: Github ssh key 등록 후 push
 parent: Github blog
 nav_order: 3
-previous: /docs/Github blog/install-Local_2
-next: /docs/Github blog/manual_4
+previous: install-Local_2
+next: manual_4
 ---
 {% include nav_btn.html %}
 

@@ -3,8 +3,8 @@ layout: default
 title: theme just-the-docs
 parent: Github blog
 nav_order: 5
-previous: /docs/Github blog/manual_4
-next: /docs/Github blog
+previous: manual_4
+next: ../Github blog
 ---
 
 {% include nav_btn.html %}
