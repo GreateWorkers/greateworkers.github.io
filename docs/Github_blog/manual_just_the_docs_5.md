@@ -20,6 +20,12 @@ next: ../Github_blog
 
 ---
 
+## 다운로드
+
+[just-the-docs](https://github.com/pmarsceill/just-the-docs)
+
+---
+
 ## just-the-docs 폴더
 
 ![image](/assets/images/screenshot.jpg)
@@ -27,7 +33,6 @@ next: ../Github_blog
 - nav.html  
 좌측 네비게이션
 
-[이전 단계](../manual_4)
 
 ---
 
