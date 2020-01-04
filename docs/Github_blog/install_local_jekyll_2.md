@@ -3,8 +3,8 @@ layout: default
 title: 설치 Jekyll
 parent: Github blog
 nav_order: 2
-previous: install_Folk_1
-next: install_Local_addgit_3
+previous: install_folk_1
+next: install_local_addgit_3
 ---
 
 {% include nav_btn.html %}

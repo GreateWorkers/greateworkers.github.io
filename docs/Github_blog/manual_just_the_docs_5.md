@@ -31,6 +31,14 @@ next: ../Github_blog
 
 ---
 
+## 주의사항
+- docs 하위 폴더 이름 한글 들어가면 안됨
+- 빈칸 들어가면 안됨
+- '-' 들어가면 안됨
+- 로컬에서는 테스트 되지만 git 에 올리고 나면 페이지를 못찾음
+
+---
+
 ## Font stack
 
 By default, Just the Docs uses a native system font stack for sans-serif fonts:

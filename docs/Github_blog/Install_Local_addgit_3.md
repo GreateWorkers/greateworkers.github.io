@@ -3,7 +3,7 @@ layout: default
 title: Github ssh key 등록 후 push
 parent: Github blog
 nav_order: 3
-previous: install_Local_2
+previous: install_local_jekyll_2
 next: manual_4
 ---
 
