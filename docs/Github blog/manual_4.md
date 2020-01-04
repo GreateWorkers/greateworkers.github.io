@@ -3,8 +3,8 @@ layout: default
 title: 메뉴얼 Jekyll
 parent: Github blog
 nav_order: 4
-previous: Install-Local-addgit_3
-next: manual-just-the-docs_5
+previous: /docs/Github blog/Install-Local-addgit_3
+next: /docs/Github blog/manual-just-the-docs_5
 ---
 
 {% include nav_btn.html %}
