@@ -10,7 +10,7 @@ next: Ubuntu_django_error_3
 {% include nav_btn.html %}
 
 
-# Virtual Machine 에 ubuntu 설치
+# VirtualBox 에 ubuntu 설치
 {: .no_toc }
 
 ## Table of contents

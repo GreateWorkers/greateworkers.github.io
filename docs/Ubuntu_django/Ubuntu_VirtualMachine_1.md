@@ -1,6 +1,6 @@
 ---
 layout: default
-title: virtual machine 에 ubuntu 설치
+title: VirtualBox 에 ubuntu 설치
 nav_order: 1
 parent: Ubuntu django 설치
 previous: ../Ubuntu_django
@@ -9,7 +9,7 @@ next: Ubuntu_django_install_2
  
 {% include nav_btn.html %}
 
-# Virtual Machine 에 ubuntu 설치
+# VirtualBox 에 ubuntu 설치
 {: .no_toc }
 
 ## Table of contents
@@ -22,7 +22,7 @@ next: Ubuntu_django_install_2
 
 ## 소개
 
-Virtual machine 을 ubuntu 설치하고 nginx + uwsgi + django project 실행
+VirtualBox 에 ubuntu 설치하고 nginx + uwsgi + django project 실행
 
 cpu 가 저사양이라 다소 버벅임
 
@@ -39,7 +39,7 @@ osx 10.14 mojave <br>
 
 ---
 
-## Virtual Machine 설치
+## VirtualBox 설치
 
 - Virtualbox download <br>
 https://www.virtualbox.org
@@ -88,7 +88,7 @@ us.archive.ubuntu.com/ubuntu
 
 ---
 
-## Virtual Machine 에 설치된 ubuntu terminal 접속 
+## VirtualBox 에 설치된 ubuntu terminal 접속 
  
 
 - 설치 후 조금 기다렸다가  
