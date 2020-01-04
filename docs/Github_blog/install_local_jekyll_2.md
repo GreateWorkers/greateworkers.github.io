@@ -4,7 +4,7 @@ title: 설치 Jekyll
 parent: Github blog
 nav_order: 2
 previous: install_git_folk_1
-next: install_local_addgit_3
+next: install_local_git_3
 ---
 
 {% include nav_btn.html %}
