@@ -4,7 +4,7 @@ title: 설치 Folk github
 parent: Github blog
 nav_order: 1
 previous: ../Github_blog
-next: install-Local_2
+next: install_Local_2
 ---
 
 {% include nav_btn.html %}
