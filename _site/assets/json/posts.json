@@ -127,6 +127,13 @@
   } ,
   
   {
+    "title": "Google API",
+    "content": "Google api .",
+    "url": "http://localhost:4000/docs/google_api",
+    "relUrl": "/docs/google_api"
+  } ,
+  
+  {
     "title": "",
     "content": "",
     "url": "http://localhost:4000/",
@@ -135,7 +142,7 @@
   
   {
     "title": "Home",
-    "content": "안녕하세요 반갑습니다 . | Home | Github blog 설치 Folk github | 설치 Jekyll | Github ssh key 등록 후 push | 메뉴얼 Jekyll | theme just-the-docs | . | Ubuntu django 설치 VirtualBox 에 ubuntu 설치 | ubuntu 에 django 설치 | error 메세지 | . | Lightsail 웹서비스 시작하기 Lightsail service | Clone source | postgres | nginx uwsgi | ssl | error 메세지 | lightsail service | . | django django Field lookups | django template tag | django date 문자열 | . | 공공데이타 | . Family sites . GreateWorkers.kr Petitions Playground My Food View it on GitHub .",
+    "content": "안녕하세요 반갑습니다 . | Home | Github blog 설치 Folk github | 설치 Jekyll | Github ssh key 등록 후 push | 메뉴얼 Jekyll | theme just-the-docs | . | Ubuntu django 설치 VirtualBox 에 ubuntu 설치 | ubuntu 에 django 설치 | error 메세지 | . | Lightsail 웹서비스 시작하기 Lightsail service | Clone source | postgres | nginx uwsgi | ssl | error 메세지 | lightsail service | . | django django Field lookups | django template tag | django date 문자열 | . | Google API reCaptcha v2 | reCaptcha v3 | Youtbue Search | Youtbue Video | Youtbue Caption | . | Kakaomap API . | 공공데이타 | . Family sites . GreateWorkers.kr Petitions Playground My Food View it on GitHub .",
     "url": "http://localhost:4000/",
     "relUrl": "/"
   } ,
@@ -162,6 +169,13 @@
   } ,
   
   {
+    "title": "Kakaomap API",
+    "content": "Kakaomap api . 카카오지도 샘플이 너무 잘 되어 있음 . 클러스터 기능은 좌표 정보로 마커를 전부 생성해야 함 . 끝 .",
+    "url": "http://localhost:4000/docs/kakaomap_api",
+    "relUrl": "/docs/kakaomap_api"
+  } ,
+  
+  {
     "title": "메뉴얼 Jekyll",
     "content": "이전 단계 다음 단계 . 메뉴얼 Jekyll . . 한국 사이트 | 변수 | . 한국 사이트 . https://jekyllrb-ko.github.io 메뉴얼을 볼 필요 없이 테마별로 사용방법이 있으니 그 정도로만 사용하면 괜찮을 것 같습니다. . 변수 . 테마 소스를 보는 데 도움이 되는 항목의 링크입니다. https://jekyllrb-ko.github.io/docs/variables/ . 전역 변수 사이트 변수 페이지 변수 Paginator .",
     "url": "http://localhost:4000/docs/Github_blog/manual_4/",
@@ -180,6 +194,41 @@
     "content": "작업 진행 예정 . .",
     "url": "http://localhost:4000/docs/publicdata/",
     "relUrl": "/docs/publicdata/"
+  } ,
+  
+  {
+    "title": "reCaptcha v2",
+    "content": "{% include nav_btn.html %} . Google reCaptcha v2 . . 소개 | 구현할 내용 | reCaptcha v2 reCaptcha v2 등록 | 사이트키/비밀키 | html 구현 | 장고 구현 | ajax 구현 | | . 소개 . 나는 로봇이 아닙니다. 사이트 무단 수집 방지 등을 위해 사용 로그인 없이 익명의 사용자가 서버에 요청을 하는 경우 등을 방지 . v2 v3 차이는 v3는 로봇이 아닙니다 체크박스가 표시되지 않고 사용자의 행동을 점수로 로봇인지 아닌지 체크함 . v2는 체크박스와 백그라운드 둘 다 있음 . v3 문서 . v2 문서 . . 구현할 내용 . 사이트 웹마스터의 이메일 주소를 클릭하면 이메일이 나타나도록 한다. . 사용 서버 django recaptcha 검증을 ajax 로 요청 . . reCaptcha v2 . 방법은 아래 v3 항목에서 . reCaptcha v2 등록 . 구글에 계정이 있다면 . youtube recaptcha console . ’+’ 클릭 . 아래 이미지 나옴 reCaptcha v2 선택 . . 원하는 형태를 선택 . 도메인 자신이 보유한 도메인이 있으면 적어줌 로컬 개발 상태이면 해당 로컬 서버 ip 주소 ex) 127.0.0.1, 192.168… . 약관에 동의하고 저장 . . 사이트키/비밀키 . 그러면 사이트키 / 비밀 키가 나옴 . 사이트키는 html javascript에서 api에 파라미터로 전송하여 | 어떤 사이트인지 api 시작을 요청하고 | api가 준비되면 토큰을 발급해준다. 비밀키 검증을 요청한다 | . requests.post(&#39;https://www.google.com/recaptcha/api/siteverify&#39;, data=data)#비밀키 . . html 구현 . &lt;!-- 구글 api 호출 --&gt; &lt;script src=&quot;https://www.google.com/recaptcha/api.js&quot; async defer&gt; &lt;/script&gt; &lt;!-- 사이트키 설정 --&gt; &lt;div id=&quot;captcha&quot; class=&quot;g-recaptcha&quot; data-sitekey=&quot;site-key&quot;&gt;&lt;/div&gt; &lt;!-- jquery에서 클릭이벤트 받을 링크 --&gt; &lt;a id=&#39;webmaster_mail&#39; href=&quot;javascript:;&quot;&gt;mailto&lt;/a&gt; &lt;!-- 장고 csrf --&gt; &lt;input id=&quot;csrf_token&quot; type=&quot;hidden&quot; value=&quot;{{csrf_token}}&quot;&gt; &lt;!-- 토큰이 만들어지면 여기 value에 들어감 --&gt; &lt;input type=&quot;hidden&quot; id=&quot;g-recaptcha&quot; name=&quot;g-recaptcha-response&quot;&gt; . . 장고 구현 . 아래 decorator 소스 출처! . def check_recaptcha(view_func): @wraps(view_func) def _wrapped_view(request, *args, **kwargs): request.recaptcha_is_valid = None if request.method == &#39;POST&#39;: recaptcha_response = request.POST.get(&#39;g-recaptcha-response&#39;) data = { &#39;secret&#39;: settings.GOOGLE_RECAPTCHA_SECRET_KEY, &#39;response&#39;: recaptcha_response } r = requests.post(&#39;https://www.google.com/recaptcha/api/siteverify&#39;, data=data) result = r.json() if result[&#39;success&#39;]: request.recaptcha_is_valid = True else: request.recaptcha_is_valid = False messages.error(request, &#39;Invalid reCAPTCHA. Please try again.&#39;) return view_func(request, *args, **kwargs) return _wrapped_view . ajax를 통해 호출할 곳에 decorator를 사용 . @check_recaptcha def request_webmaster_mail(request): if request.method == &#39;POST&#39;: if request.recaptcha_is_valid: return HttpResponse(json.dumps({ &#39;message&#39;: &#39;greateworkers@gmail.com&#39;})) else: return HttpResponse(json.dumps({ &#39;message&#39;: &#39;&#39;})) return HttpResponse(json.dumps({&#39;message&#39;: &#39;&#39;})) . ajax 구현 . $(function(){ $(&#39;#webmaster_mail&#39;).click(function(){ if (grecaptcha.getResponse() == &quot;&quot;) { $(&#39;#captcha&#39;).show(); return; } $.ajax({ type: &quot;POST&quot;, url: &quot;/webmaster/mail&quot;, data: { &#39;g-recaptcha-response&#39;: grecaptcha.getResponse(), &#39;csrfmiddlewaretoken&#39;:$(&#39;#csrf_token&#39;).val(), }, dataType: &quot;json&quot;, success: function(response){ alert(&#39;ok&#39;); }, error: function(request, status, error){ alert(&#39;error&#39;); }, }); }); }); . {% include nav_btn.html %} .",
+    "url": "http://localhost:4000/docs/google_api/recaptchav2/",
+    "relUrl": "/docs/google_api/recaptchav2/"
+  } ,
+  
+  {
+    "title": "reCaptcha v3",
+    "content": "{% include nav_btn.html %} . Google reCaptcha v3 . . 소개 | 구현할 내용 장고 구현 | html 구현 | 약관 표시 아이콘 | | . 소개 . v2와 거의 동일 Html 부분이 다름 . . 구현할 내용 . 사이트 웹마스터의 이메일 주소보기를 클릭하면 이메일이 나타나도록 한다. . 사용 서버 django recaptcha 검증을 ajax 로 요청 . . 장고 구현 . v2와 동일 . . html 구현 . &lt;script src=&quot;https://www.google.com/recaptcha/api.js?render={{recaptcha_sitekey}}&quot;&gt;&lt;/script&gt; . &lt;input type=&quot;hidden&quot; id=&quot;g-recaptcha&quot; name=&quot;g-recaptcha-response&quot;&gt; &lt;input type=&quot;hidden&quot; id=&quot;recaptcha-action&quot; value=&quot;[구분할 이름]&quot;&gt; . recaptcha.js js 파일로 만들어서 hidden 값을 불러오는 것을 적어줌 . $(function(){ grecaptcha.ready(function() { var sitekey = $(&#39;#recaptcha-sitekey&#39;).val(); var action = $(&#39;#recaptcha-action&#39;).val(); grecaptcha.execute(sitekey, {action: action}).then(function(token) { $(&#39;#g-recaptcha&#39;).val(token); }); }); }); . . 약관 표시 아이콘 . v3 는 사이트에서 안내하는데로 할 경우 우측 하단에 저런 아이콘이 표시됨 . . 그냥 없애면 안되고 개인정보 사항에 대한 고지를 해야함 왜냐면 사용자 행동을 수집해서 결과를 내기 때문인 것 같음 . .grecaptcha-badge { visibility: hidden; } . 그리고 이 문구를 표시해야함 . This site is protected by reCAPTCHA and the Google     &lt;a href=&quot;https://policies.google.com/privacy&quot;&gt;Privacy Policy&lt;/a&gt; and     &lt;a href=&quot;https://policies.google.com/terms&quot;&gt;Terms of Service&lt;/a&gt; apply. . 참고 문서 Google FAQ . {% include nav_btn.html %} .",
+    "url": "http://localhost:4000/docs/google_api/recaptchav3/",
+    "relUrl": "/docs/google_api/recaptchav3/"
+  } ,
+  
+  {
+    "title": "Youtbue Caption",
+    "content": "{% include nav_btn.html %} . Youtbue Caption . . 소개 | 구현할 내용 | . 소개 . . 구현할 내용 . {% include nav_btn.html %} .",
+    "url": "http://localhost:4000/docs/google_api/youtube_caption/",
+    "relUrl": "/docs/google_api/youtube_caption/"
+  } ,
+  
+  {
+    "title": "Youtbue Search",
+    "content": "{% include nav_btn.html %} . Youtbue Search . . 소개 | . 소개 . . {% include nav_btn.html %} .",
+    "url": "http://localhost:4000/docs/google_api/youtube_search/",
+    "relUrl": "/docs/google_api/youtube_search/"
+  } ,
+  
+  {
+    "title": "Youtbue Video",
+    "content": "{% include nav_btn.html %} . Youtbue Video . . 소개 | 구현할 내용 | . 소개 . . 구현할 내용 . {% include nav_btn.html %} .",
+    "url": "http://localhost:4000/docs/google_api/youtube_video/",
+    "relUrl": "/docs/google_api/youtube_video/"
   } 
   
 ]
