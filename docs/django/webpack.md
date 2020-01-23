@@ -90,15 +90,11 @@ clean-webpack-plugin 은 프로덕션 레벨에서 빌드하면
 
 ---
 ### publicPath
-publicPath를 output 에만 설정해야함
+publicPath를 output 에 꼭 설정해야함  
 djangoServer 에설정해주면 연결되지 않음..(실수)
 
-webpack.config.dev.js -x webpack-dev-server",
-으로 하면 dist파일이 생기고 
-src 폴더에 index 를 생성해주어야 한다.
-webpac stat json 파일이 생성되지 않네
-
-
+html 에서 불러오는 방법  
+저러면 js을 불러오는 스크립트를 생성함  
 {% raw %}
 ```
 {% load render_bundle from webpack_loader %}
