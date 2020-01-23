@@ -68,8 +68,9 @@ react-native 하면서 yarn 이 오류가 더 적었음
 
 ## npm yarn 명령어
 
--D 동일 --dev
--i --save 은 add 
+
+npm 의 -D 은 --dev  
+npm 의 -i --save 은 add  
 
 django root 폴더에서 폴더하나 만들어서  
 yarn init -y 으로 node_modules을 관리  
