@@ -4,7 +4,7 @@ title: webpack
 nav_order: 5
 parent: django
 previous: crontab
-next: ../django
+next: crontab_user
 ---
 {% include nav_btn.html %}
 
