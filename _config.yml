@@ -13,8 +13,8 @@
 # you will see them accessed via {{ site.title }}, {{ site.github_repo }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: GreateWorkers Blog
-description: GreateWorkers Blog
+title:  Blog
+description:  Blog
 #baseurl: "https://blog.greateworkers.kr" # the subpath of your site, e.g. /blog
 #url: "https://greateworkers.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -57,7 +57,7 @@ heading_anchors: true
 footer_content: "GreateWorkers.kr"
 
 # Color scheme currently only supports "dark" or nil (default)
-color_scheme: nil
+color_scheme: dark
 
 # Google Analytics Tracking (optional)
 # e.g, UA-1234567-89

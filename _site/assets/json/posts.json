@@ -128,7 +128,7 @@
   
   {
     "title": "Django logging & crontab logging",
-    "content": "이전 단계 다음 단계 . Django logging &amp; crontab logging . . 장고의 logging 과 crontab logging | . 장고의 logging 과 crontab logging . 사용자 deploy로 로그인해서 crontab 을 등록해야 권한 문제가 발생하지 않음 . 권한을 추가하여도 logging 파일이 백업되면 권한 에러가 나니 . sudo setfacl -R -m u:ubuntu:rwx log . deploy 계정으로 crontab 을 등록 . crontab -u deploy -e crontab -u deploy -l . 이전 단계 다음 단계 .",
+    "content": "이전 단계 다음 단계 . Django logging &amp; crontab logging . . 장고의 logging 과 crontab logging | . 장고의 logging 과 crontab logging . 사용자 deploy 로 로그인해서 crontab 을 등록해야 권한 문제가 발생하지 않음 . 권한을 추가하여도 logging 파일이 백업되면 권한 에러가 나니 . sudo setfacl -R -m u:ubuntu:rwx log . deploy 계정으로 crontab 을 등록 . crontab -u deploy -e crontab -u deploy -l . 이전 단계 다음 단계 .",
     "url": "http://localhost:4000/docs/django/crontab_user/",
     "relUrl": "/docs/django/crontab_user/"
   } ,
@@ -156,7 +156,7 @@
   
   {
     "title": "Home",
-    "content": "안녕하세요 반갑습니다 . | Home | Github blog 설치 Folk github | 설치 Jekyll | Github ssh key 등록 후 push | 메뉴얼 Jekyll | theme just-the-docs | . | Ubuntu django 설치 VirtualBox 에 ubuntu 설치 | ubuntu 에 django 설치 | error 메세지 | . | Lightsail 웹서비스 시작하기 Lightsail service | Lightsail service | Clone source | postgres | nginx uwsgi | ssl | error 메세지 | lightsail service | . | django django Field lookups | django template tag | django date 문자열 | Django Crontab 에 scrapy 등록 | webpack | Django logging &amp; crontab logging | . | Google API reCaptcha v2 | reCaptcha v3 | Youtbue Search | Youtbue Video | Youtbue Caption | . | Pandas . | Kakaomap API . | 공공데이타 | . Family sites . GreateWorkers.kr Petitions Playground My Food View it on GitHub .",
+    "content": "| Home | Github blog 설치 Folk github | 설치 Jekyll | Github ssh key 등록 후 push | 메뉴얼 Jekyll | theme just-the-docs | . | Ubuntu django 설치 VirtualBox 에 ubuntu 설치 | ubuntu 에 django 설치 | error 메세지 | . | Lightsail 웹서비스 시작하기 Lightsail service | Clone source | postgres | nginx uwsgi | ssl | error 메세지 | lightsail service | . | django django Field lookups | django template tag | django date 문자열 | Django Crontab 에 scrapy 등록 | webpack | Django logging &amp; crontab logging | . | Google API reCaptcha v2 | reCaptcha v3 | Youtbue Search | Youtbue Video | Youtbue Caption | . | . Playground .",
     "url": "http://localhost:4000/",
     "relUrl": "/"
   } ,
@@ -183,13 +183,6 @@
   } ,
   
   {
-    "title": "Kakaomap API",
-    "content": "Kakaomap api . 카카오지도 샘플이 너무 잘 되어 있음 . 클러스터 기능은 좌표 정보로 마커를 전부 생성해야 함 . 아래 부분은 헤더에 추가하여 저렇게 보내니 됨 query 부분은 메뉴얼에 나온 url을 적으면 됨 . python request . response = requests.get(query, headers={&#39;Authorization&#39;: f&#39;KakaoAK {KAKAOMAP_KEY}&#39;}) js = json.loads(response.text) . 끝 .",
-    "url": "http://localhost:4000/docs/kakaomap_api",
-    "relUrl": "/docs/kakaomap_api"
-  } ,
-  
-  {
     "title": "메뉴얼 Jekyll",
     "content": "이전 단계 다음 단계 . 메뉴얼 Jekyll . . 한국 사이트 | 변수 | . 한국 사이트 . https://jekyllrb-ko.github.io 메뉴얼을 볼 필요 없이 테마별로 사용방법이 있으니 그 정도로만 사용하면 괜찮을 것 같습니다. . 변수 . 테마 소스를 보는 데 도움이 되는 항목의 링크입니다. https://jekyllrb-ko.github.io/docs/variables/ . 전역 변수 사이트 변수 페이지 변수 Paginator .",
     "url": "http://localhost:4000/docs/Github_blog/manual_4/",
@@ -201,27 +194,6 @@
     "content": "이전 단계 다음 단계 . theme just-the-docs . . 다운로드 | just-the-docs 폴더 | 주의사항 | Font stack | Responsive type scale | Headings | Body text | Inline elements | Typographic Utilities | Color schemes | Specific visual customization | Override styles | . 다운로드 . just-the-docs . . just-the-docs 폴더 . . nav.html 좌측 네비게이션 | . . 주의사항 . docs 하위 폴더 이름 한글 들어가면 안됨 빈칸 들어가면 안됨 ‘-‘ 들어가면 안됨 위에 내용으로 하지 않아도 로컬에서는 테스트 되지만 git 에 올리고 나면 404 에러 남 | 소문자로 통일하는 것이 좋음 | . . Font stack . By default, Just the Docs uses a native system font stack for sans-serif fonts: . -apple-system, BlinkMacSystemFont, &quot;helvetica neue&quot;, helvetica, roboto, noto, &quot;segoe ui&quot;, arial, sans-serif . ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz . For monospace type, like code snippets or the &lt;pre&gt; element, Just the Docs uses a native system font stack for monospace fonts: . &quot;SFMono-Regular&quot;, Menlo, Consolas, Monospace . ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz . . Responsive type scale . Just the Docs uses a responsive type scale that shifts depending on the viewport size. . Selector Small screen size font-size Large screen size font-size . h1, .text-alpha | 32px | 36px | . h2, .text-beta | 18px | 24px | . h3, .text-gamma | 16px | 18px | . h4, .text-delta | 14px | 16px | . h5, .text-epsilon | 16px | 18px | . h6, .text-zeta | 18px | 24px | . body | 14px | 16px | . . Headings . Headings are rendered like this: . Heading 1 . Heading 2 . Heading 3 . Heading 4 . Heading 5 . Heading 6 . # Heading 1 ## Heading 2 ### Heading 3 #### Heading 4 ##### Heading 5 ###### Heading 6 . . Body text . Default body text is rendered like this: . Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. . Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. . . Inline elements . Text can be bold, italic, or strikethrough. . Link to another page. . Text can be **bold**, _italic_, or ~~strikethrough~~. [Link to another page](another-page). . . Typographic Utilities . There are a number of specific typographic CSS classes that allow you to override default styling for font size, font weight, line height, and capitalization. . Color schemes . New . Just the Docs supports two color schemes: light (default), and dark. . To enable a color scheme, set the color_scheme parameter in your site’s _config.yml file: . Example . # Color scheme currently only supports &quot;dark&quot; or nil (default) color_scheme: &quot;dark&quot; . Preview dark color scheme . Specific visual customization . To customize your site’s aesthetic, open _sass/custom/custom.scss in your editor to see if there is a variable that you can override. Most styles like fonts, colors, spacing, etc. are derived from these variables. To override a specific variable, uncomment its line and change its value. . For example, to change the link color from the purple default to blue, open _sass/custom/custom.css and find the $link-color variable on line 50. Uncomment it, and change its value to our $blue-000 variable, or another shade of your choosing. . Example . // ... // // $body-text-color: $grey-dk-100; // $body-heading-color: $grey-dk-300; $link-color: $blue-000; // // ... . Note: Editing the variables directly in _sass/support/variables.scss is not recommended and can cause other dependencies to fail. . Override styles . For styles that aren’t defined as a variables, you may want to modify specific CSS classes. To add your own CSS overrides at the end of the cascade, edit _sass/overrides.scss. This will allow for all overrides to be kept in a single file, and for any upstream changes to still be applied. . For example, if you’d like to add your own styles for printing a page, you could add the following styles. . Example . // Print-only styles. @media print { .side-bar, .page-header { display: none; } .main-content { max-width: auto; margin: 1em;} } . 이전 단계 다음 단계 .",
     "url": "http://localhost:4000/docs/Github_blog/manual_just_the_docs_5/",
     "relUrl": "/docs/Github_blog/manual_just_the_docs_5/"
-  } ,
-  
-  {
-    "title": "Pandas",
-    "content": "pandas . pandas 시작 .",
-    "url": "http://localhost:4000/docs/pandas",
-    "relUrl": "/docs/pandas"
-  } ,
-  
-  {
-    "title": "Lightsail service",
-    "content": "이전 단계 다음 단계 . Pandas 시작 . . pandas | 강좌 듣고 따라하기 | 설치 | pandas 의 속성 | 코드 | . pandas . 데이터 분석하기 위한 라이브러리 . . 강좌 듣고 따라하기 . 동영상 강좌들으며 시작 . . 설치 . pycharm 에 jupyter notebook 설치 필요 라이브러리 설치 . . pandas 의 속성 . data frame serial … — . 코드 . # import requests # from bs4 import BeautifulSoup as bs import pandas as pd import numpy as np import re import matplotlib.pyplot as plt # from tqdm import trange %matplotlib inline %config InlineBackend.figure_format = &#39;retina&#39; plt.rc(&quot;font&quot;,family=&quot;AppleGothic&quot;) plt.rc(&quot;axes&quot;,unicode_minus=False) df = pd.read_csv(&quot;clien-reply.csv&quot;) df.shape df.shape df = df.drop_duplicates([&quot;text&quot;],keep=&quot;last&quot;) keywords = [&quot;미국&quot;,&quot;한국&quot;,&quot;한정&quot;,&quot;사용&quot;] for keyword in keywords: df[keyword] = df[&quot;text&quot;].str.contains(keyword) df_python = df[df[&quot;text&quot;].str.contains(&quot;미국&quot;)].copy() df_python.tail() df[keywords].sum().sort_values(ascending=False) df.loc[(df[&quot;사용&quot;] == True),&quot;text&quot;] . . import requests from bs4 import BeautifulSoup as bs import pandas as pd from tqdm import trange base_url = &quot;https://www.clien.net/service/board/park/14544635?type=recommend&quot; response = requests.get(base_url) soup=bs(response.text,&#39;html.parser&#39;) #soup replys = [] content = soup.select(&quot;#div_content &gt; div.post_comment &gt; div.comment &gt; div&quot;) content_length = len(content) # print(content[118]) # print(content[59].select(&quot;div.comment_view&quot;)[0].get_text(strip=True)) for i in trange(content_length): reply = content[i].select(&quot;div.comment_view&quot;) if len(reply) &gt; 0: replys.append(reply[0].get_text(strip=True)) else: replys.append(&quot;삭제되었습니다.&quot;) #div_content &gt; div.post_comment &gt; div.comment &gt; div:nth-child(2) df = pd.DataFrame({&quot;text&quot;:replys}) df.shape df.to_csv(&quot;clien-reply.csv&quot;,index=False) . 이전 단계 다음 단계 .",
-    "url": "http://localhost:4000/docs/pandas/pandas_1/",
-    "relUrl": "/docs/pandas/pandas_1/"
-  } ,
-  
-  {
-    "title": "공공데이타",
-    "content": "작업 진행 예정 . .",
-    "url": "http://localhost:4000/docs/publicdata/",
-    "relUrl": "/docs/publicdata/"
   } ,
   
   {
